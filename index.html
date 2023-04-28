@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Corte binario</title>
+    <style>
+      /* Estilos CSS para la tabla de resultados */
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+      th {
+        background-color: gray;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Corte binario</h1>
+    <form>
+      <label for="ancho_material">Ancho del material en mm:</label>
+      <input type="number" id="ancho_material" name="ancho_material"><br><br>
+      <label for="alto_material">Alto del material en mm:</label>
+      <input type="number" id="alto_material" name="alto_material"><br><br>
+      <label for="objetos">Cantidad de objetos:</label>
+      <input type="number" id="objetos" name="objetos"><br><br>
+      <label for="ancho_objeto">Ancho de cada objeto en mm:</label>
+      <input type="number" id="ancho_objeto" name="ancho_objeto"><br><br>
+      <label for="alto_objeto">Alto de cada objeto en mm:</label>
+      <input type="number" id="alto_objeto" name="alto_objeto"><br><br>
+      <input type="button" value="Calcular" onclick="calcular()">
+    </form>
+    <br>
+    <h2>Resultados:</h2>
+    <table id="tabla_resultados"></table>
+    <script src="corte_binario.js"></script>
+  </body>
+</html>

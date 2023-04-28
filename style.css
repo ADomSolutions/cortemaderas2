@@ -1,0 +1,12 @@
+/* Estilos CSS para el formulario */
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+label, input[type="number"], input[type="button"] {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="button"] {
+  margin-top: 10px;
+}
